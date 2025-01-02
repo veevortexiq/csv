@@ -1,0 +1,43 @@
+key_phrase,api_endpoint,http_method,description,payload_template,identifier_key,identifier_type,identifier_api_endpoint
+update product title,/v3/catalog/products/{product_id},PUT,Update product title,"{""name"":""{new_title}""}",product_id,product,/v3/catalog/products
+update product price,/v3/catalog/products/{product_id},PUT,Update product price,"{""price"":""{new_price}""}",product_id,product,/v3/catalog/products
+update product description,/v3/catalog/products/{product_id},PUT,Update product description,"{""description"":""{new_description}""}",product_id,product,/v3/catalog/products
+update product weight,/v3/catalog/products/{product_id},PUT,Update product weight,"{""weight"":""{new_weight}""}",product_id,product,/v3/catalog/products
+update product inventory,/v3/catalog/products/{product_id},PUT,Update product inventory,"{""inventory_level"":""{new_inventory}""}",product_id,product,/v3/catalog/products
+update product visibility,/v3/catalog/products/{product_id},PUT,Update product visibility,"{""is_visible"":""{new_visibility}""}",product_id,product,/v3/catalog/products
+update product availability,/v3/catalog/products/{product_id},PUT,Update product availability,"{""availability"":""{new_availability}""}",product_id,product,/v3/catalog/products
+update product SKU,/v3/catalog/products/{product_id},PUT,Update product SKU,"{""sku"":""{new_sku}""}",product_id,product,/v3/catalog/products
+update product condition,/v3/catalog/products/{product_id},PUT,Update product condition,"{""condition"":""{new_condition}""}",product_id,product,/v3/catalog/products
+update product sale price,/v3/catalog/products/{product_id},PUT,Update product sale price,"{""sale_price"":""{new_sale_price}""}",product_id,product,/v3/catalog/products
+update product cost price,/v3/catalog/products/{product_id},PUT,Update product cost price,"{""cost_price"":""{new_cost_price}""}",product_id,product,/v3/catalog/products
+update product retail price,/v3/catalog/products/{product_id},PUT,Update product retail price,"{""retail_price"":""{new_retail_price}""}",product_id,product,/v3/catalog/products
+update product meta keywords,/v3/catalog/products/{product_id},PUT,Update product meta keywords,"{""meta_keywords"":""{new_meta_keywords}""}",product_id,product,/v3/catalog/products
+update product meta desc,/v3/catalog/products/{product_id},PUT,Update product meta description,"{""meta_description"":""{new_meta_description}""}",product_id,product,/v3/catalog/products
+update product page title,/v3/catalog/products/{product_id},PUT,Update product page title,"{""page_title"":""{new_page_title}""}",product_id,product,/v3/catalog/products
+update product brand ID,/v3/catalog/products/{product_id},PUT,Update product brand ID,"{""brand_id"":""{new_brand_id}""}",product_id,product,/v3/catalog/products
+update product categories,/v3/catalog/products/{product_id},PUT,Update product categories,"{""categories"":""{new_categories}""}",product_id,product,/v3/catalog/products
+create a product,/v3/catalog/products,POST,Create a new product,"{""name"":""{product_name}"", ""price"":""{product_price}"", ""weight"":""{product_weight}"", ""type"":""{product_type}"", ""sku"":""{product_sku}"", ""categories"": [""{category_id}""]}",None,product,/v3/catalog/products
+update category name,/v3/catalog/categories/{category_id},PUT,Update the category name,"{""name"":""{new_category_name}""}",category_id,category,/v3/catalog/categories
+update category visibility,/v3/catalog/categories/{category_id},PUT,Update the category visibility,"{""is_visible"":""{new_visibility}""}",category_id,category,/v3/catalog/categories
+update category parent_id,/v3/catalog/categories/{category_id},PUT,Update the category parent,"{""parent_id"":""{parent_id}""}",category_id,category,/v3/catalog/categories
+update category custom_url,/v3/catalog/categories/{category_id},PUT,Update the category custom URL,"{""custom_url"": {""url"": ""{custom_url}"", ""is_customized"": ""{is_customized}""}}",category_id,category,/v3/catalog/categories
+update category sort_order,/v3/catalog/categories/{category_id},PUT,Update the category sort order,"{""sort_order"": ""{sort_order}""}",category_id,category,/v3/catalog/categories
+update category description,/v3/catalog/categories/{category_id},PUT,Update the category description,"{""description"": ""{description}""}",category_id,category,/v3/catalog/categories
+update category image_url,/v3/catalog/categories/{category_id},PUT,Update the category image URL,"{""image_url"": ""{image_url}""}",category_id,category,/v3/catalog/categories
+update category meta_title,/v3/catalog/categories/{category_id},PUT,Update the category meta title,"{""meta_title"": ""{meta_title}""}",category_id,category,/v3/catalog/categories
+update category meta_description,/v3/catalog/categories/{category_id},PUT,Update the category meta description,"{""meta_description"": ""{meta_description}""}",category_id,category,/v3/catalog/categories
+update category meta_keywords,/v3/catalog/categories/{category_id},PUT,Update the category meta keywords,"{""meta_keywords"": ""{meta_keywords}""}",category_id,category,/v3/catalog/categories
+create coupon promotion,/v3/promotions/coupons,POST,Create a coupon promotion,"{""name"": ""{promotion_name}"", ""code"": ""{coupon_code}"", ""max_uses"": ""{max_uses}"", ""discount_type"": ""{discount_type}"", ""amount"": ""{discount_amount}""}",N/A,N/A,/v3/promotions/coupons
+set promotion name,/v3/promotions/coupons,POST,Set the coupon promotion name,"{""name"": ""{promotion_name}""}",N/A,N/A,/v3/promotions/coupons
+set coupon code,/v3/promotions/coupons,POST,Set the coupon code,"{""code"": ""{coupon_code}""}",N/A,N/A,/v3/promotions/coupons
+set max uses,/v3/promotions/coupons,POST,Set the maximum uses of the coupon,"{""max_uses"": ""{max_uses}""}",N/A,N/A,/v3/promotions/coupons
+set discount type,/v3/promotions/coupons,POST,Set the discount type (e.g. percentage or fixed),"{""discount_type"": ""{discount_type}""}",N/A,N/A,/v3/promotions/coupons
+set discount amount,/v3/promotions/coupons,POST,Set the discount amount,"{""amount"": ""{discount_amount}""}",N/A,N/A,/v3/promotions/coupons
+set coupon expiry date,/v3/promotions/coupons,POST,Set the expiry date for the coupon,"{""expiry_date"": ""{expiry_date}""}",N/A,N/A,/v3/promotions/coupons
+set customer limit per coupon,/v3/promotions/coupons,POST,Set the per-customer coupon limit,"{""max_uses_per_customer"": ""{max_uses_per_customer}""}",N/A,N/A,/v3/promotions/coupons
+set minimum purchase amount,/v3/promotions/coupons,POST,Set the minimum purchase amount,"{""min_purchase"": ""{min_purchase}""}",N/A,N/A,/v3/promotions/coupons
+create inventory location webhook,/v3/hooks,POST,Create a webhook for inventory location events,"{""scope"": ""store/inventory/locations/*"", ""destination"": ""{webhook_url}"", ""is_active"": ""{is_active}""}",N/A,N/A,/v3/hooks
+update inventory location webhook,/v3/hooks/{webhook_id},PUT,Update an existing webhook for inventory location events,"{""scope"": ""store/inventory/locations/*"", ""destination"": ""{webhook_url}"", ""is_active"": ""{is_active}""}",webhook_id,webhook,/v3/hooks/{webhook_id}
+delete inventory location webhook,/v3/hooks/{webhook_id},DELETE,Delete a webhook for inventory location events,N/A,webhook_id,webhook,/v3/hooks/{webhook_id}
+get all inventory location webhooks,/v3/hooks,GET,Retrieve all webhooks for inventory location events,N/A,N/A,N/A,/v3/hooks
+get inventory location webhook,/v3/hooks/{webhook_id},GET,Retrieve a specific webhook for inventory location events,N/A,webhook_id,webhook,/v3/hooks/{webhook_id}
